@@ -19,6 +19,7 @@ ame-yatagarasu: URL の中身を取ってくる(curl の代わり。ame-shell �
     -A 名前 / -H "名前: 値" / -X メソッド
     -d / --data-binary 文字 | @ファイル / --data-urlencode 名前=中身   本文を送る(既定のメソッドは POST。2 つ目からは & でつなぐ)
     -G                     本文を URL の ? の後ろに付けて GET で送る
+    --compressed           gzip で送ってもらい、展開して書く(curl と同じ)
     -w 書式                 最後に書く(%{http_code} を状態コードに置き換える)
     -K -                    設定を標準入力から(url / header / data-binary / user-agent / request = "値")
     --max-time 秒 / --connect-timeout 秒 / --max-filesize バイト
